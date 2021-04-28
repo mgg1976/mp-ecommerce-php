@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'e3aedbfa369010f518359439ddcfb5c7c45a088c',
+    'reference' => '642c7fc321e46e10701cee6a3e92c45c85567580',
     'name' => 'mgg1976/mp-ecommerce-php',
   ),
   'versions' => 
@@ -108,7 +108,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'e3aedbfa369010f518359439ddcfb5c7c45a088c',
+      'reference' => '642c7fc321e46e10701cee6a3e92c45c85567580',
     ),
   ),
 );
