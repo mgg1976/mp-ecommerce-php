@@ -13,7 +13,7 @@
     $item->description = "Dispositivo móvil de Tienda e-commerce";
     $item->quantity = 1;
     $item->unit_price = floatval($_POST['price']);
-    $item->picture_url = "https://mgg1976-mp-ecommerce-php.herokuapp.com/assets/l6g6.jpg";
+    $item->picture_url = $_POST['img'];
     $preference->items = array($item);
 
     // Back Urls
