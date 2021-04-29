@@ -16,12 +16,6 @@
     $item->picture_url = $_POST['img'];
     $preference->items = array($item);
 
-    // Back Urls
-    $back_urls->success = "$_SERVER[HTTP_HOST]/success.php";
-    $back_urls->pending = "$_SERVER[HTTP_HOST]/pending.php";
-    $back_urls->failure = "$_SERVER[HTTP_HOST]/failure.php";
-    $preference->back_urls = $back_urls;
-
     // Datos del pagador
     $payer = new MercadoPago\Payer();
     $payer->name = "Lalo";
@@ -46,6 +40,11 @@
     );
 
     // Otras preferencias
+    $preference->back_urls = array(
+      "success" => "$_SERVER[HTTP_HOST]/success.php",
+      "failure" => "$_SERVER[HTTP_HOST]/failure.php",
+      "pending" => "$_SERVER[HTTP_HOST]/pending.php"
+    );
     $preference->auto_return = "approved";
     $preference->external_reference = 'gastongrimberg@gmail.com';
     $preference->notification_url = "https://mgg1976-mp-ecommerce-php.herokuapp.com/notifications.php?source_news=webhooks";
