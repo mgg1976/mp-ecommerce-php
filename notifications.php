@@ -9,21 +9,21 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 var_dump($data);
     var_dump($_GET);
-    switch($_POST["type"]) {
-        case "payment":
-            $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
-            var_dump($payment);
-            var_dump($_POST);
-            break;
-        case "plan":
-            $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
-            break;
-        case "subscription":
-            $plan = MercadoPago\Subscription.find_by_id($_POST["id"]);
-            break;
-        case "invoice":
-            $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
-            break;
-    }
+    // switch($_POST["type"]) {
+    //     case "payment":
+    //         $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+    //         var_dump($payment);
+    //         var_dump($_POST);
+    //         break;
+    //     case "plan":
+    //         $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
+    //         break;
+    //     case "subscription":
+    //         $plan = MercadoPago\Subscription.find_by_id($_POST["id"]);
+    //         break;
+    //     case "invoice":
+    //         $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
+    //         break;
+    // }
 
 ?>
