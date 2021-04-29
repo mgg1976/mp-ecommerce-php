@@ -8,7 +8,7 @@ $json = file_get_contents('php://input');
 // Converts it into a PHP object
 $data = json_decode($json);
 var_dump($data);
-    var_dump($_GET);
+    var_dump($_REQUEST);
     // switch($_POST["type"]) {
     //     case "payment":
     //         $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
