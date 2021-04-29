@@ -54,7 +54,7 @@
     );
     $preference->auto_return = "approved";
     $preference->external_reference = 'gastongrimberg@gmail.com';
-    $preference->notification_url = "https://mgg1976-mp-ecommerce-php.herokuapp.com/notifications.php?source_news=webhooks";
+    $preference->notification_url = "https://mgg1976-mp-ecommerce-php.herokuapp.com/notifications.php";
     $preference->save();
   ?>
 
