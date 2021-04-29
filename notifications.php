@@ -6,6 +6,8 @@
     switch($_POST["type"]) {
         case "payment":
             $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+            var_dump($payment);
+            var_dump($_POST);
             break;
         case "plan":
             $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
