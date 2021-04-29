@@ -54,7 +54,7 @@
     );
     $preference->auto_return = "approved";
     $preference->external_reference = 'gastongrimberg@gmail.com';
-    $preference->notification_url = "https://webhook.site/e5c97c8b-5d02-41d7-84e9-66f84b5e6f9";
+    $preference->notification_url = "https://webhook.site/e5c97c8b-5d02-41d7-84e9-66f84b5e6f9b";
     $preference->save();
   ?>
 
