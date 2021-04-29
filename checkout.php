@@ -21,12 +21,19 @@
     $payer->name = "Lalo";
     $payer->surname = "Landa";
     $payer->email = "test_user_63274575@testuser.com";
-    $payer->phone->area_code = "11";
-    $payer->phone->number = "22223333";
-    $payer->address->street_name = "False";
-    $payer->address->street_number = "123";
-    $payer->address->zip_code = "1111";
+    $phone = array(
+      "area_code" => "11",
+      "number" => "22223333"
+    );
+    $payer->phone = $phone;
+    $address = array(
+      "street_name" => "False",
+      "street_number" => "123",
+      "zip_code" => "1111"
+    );
+    $payer->address = $address;
     $preference->payer = $payer;
+
 
     // Condiciones de pago admitidas
     $preference->payment_methods = array(
